@@ -26,7 +26,7 @@ Phase 1 – Network setup & system visibility
 - Simulate basic attack scenarios safely
 
 ## Progress Log
-- [ ] Verify all devices on same subnet
-- [ ] Confirm server IP stability
-- [ ] Enable SSH access
+- [x] Verify all devices on same subnet
+- [x] Confirm server IP stability
+- [x] Enable SSH access
 - [ ] Baseline network traffic
