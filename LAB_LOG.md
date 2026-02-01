@@ -37,6 +37,41 @@ Establish and verify network visibility between the Windows Analysis Station (HP
 - [x] Initiated `apt upgrade` to resolve pending kernel version (6.8.0-94-generic).
 - [x] Verified remote terminal control from HP Laptop to Ubuntu Server.
 
+# 4. Logging & Visibility
+
+## Phase 4: Logging & Live Monitoring
+
+### **Objective**
+Establish host-level visibility by monitoring authentication activity in real time and validating that system logs accurately reflect user actions.
+---
+### **Actions Performed**
+1. **Verified Service:** Confirmed the system logging service (`rsyslog`) was active on the Ubuntu server.
+2. **Identified SOC Logs:** Located high-value log files used in SOC operations:
+    * `/var/log/auth.log` (SSH logins, sudo attempts)
+    * `/var/log/syslog` (General system activity)
+3. **Live Monitoring:** Enabled live log monitoring using `tail -f` on authentication logs.
+4. **Initiated Connection:** Performed an SSH connection from the HP laptop to the Ubuntu server.
+5. **Real-Time Observation:** Observed log entries corresponding to the SSH authentication attempt as they happened.
+---
+### **Evidence Observed**
+* **Immediate Generation:** SSH login attempts generated immediate log entries in `/var/log/auth.log`.
+* **Telemetry Data:** Logs successfully captured:
+    * Timestamp
+    * Source IP address
+    * Username
+    * Authentication status
+* **Correlation:** Confirmed direct correlation between user action and log telemetry.
+---
+### **Outcome**
+This phase confirms:
+* **Host-based logging** is enabled and functioning.
+* **Authentication activity** is observable in real time.
+* **Telemetry reliability:** The Ubuntu server provides reliable telemetry for security monitoring.
+
+This establishes a baseline for future detection and alerting activities.
+---
+### **Phase Status**
+✅ **Completed** 
 
 ## Technical Summary
 The lab environment is "alive." The Windows host can successfully route traffic to the Ubuntu target within the `192.123.0.0/24` subnet.
