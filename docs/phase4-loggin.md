@@ -17,3 +17,11 @@ I initiated an SSH connection from my HP laptop to the server.
 Using `tail -f /var/log/auth.log`, I captured the following event:
 ![Auth Log Detection](docs/assets/auth_ss.png)
 
+Observed real-time authentication logging via `/var/log/auth.log`.
+
+Confirmed:
+- SSH login attempts are logged
+- Timestamped entries
+- User attribution
+
+This establishes baseline host-level visibility.
