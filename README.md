@@ -17,7 +17,7 @@ This is a personal learning project focused on:
 - TP-Link Home Router
 
 ## Current Phase
-Phase 1 – Network setup & system visibility
+Phase 4 – Network traffic & detection
 
 ## Lab Goals
 - Establish reliable network connectivity between devices
