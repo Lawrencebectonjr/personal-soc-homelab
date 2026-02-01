@@ -29,4 +29,8 @@ Phase 4 – Network traffic & detection
 - [x] Verify all devices on same subnet
 - [x] Confirm server IP stability
 - [x] Enable SSH access
-- [ ] Baseline network traffic
+- [x] Establish ICMP connectivity (heartbeat)
+- [x] Enable system logging (rsyslog)
+- [x] Observe real-time authentication events
+- [ ] Centralize logs
+
