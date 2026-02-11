@@ -1,0 +1,9 @@
+personal-soc-homelab/
+├── README.md
+├── phases/
+│   ├── phase1-network-setup.md
+│   ├── phase2-connectivity-validation.md
+│   ├── phase3-enumeration.md
+│   ├── phase4-logging-and-visibility.md
+│   └── phase5-hardening-and-lockdown.md
+└── screenshots/
